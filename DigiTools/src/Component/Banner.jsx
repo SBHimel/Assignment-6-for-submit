@@ -46,7 +46,7 @@ const Banner = () => {
 
                 {/* Right Image */}
                 <div className="relative flex justify-center lg:justify-end">
-                    <div className="relative">
+                    <div className="relative transition duration-300 transform hover:-translate-y-2 hover:scale-105 shadow-md hover:shadow-xl ">
                         <img
                             className="relative h-130 w-auto object-contain drop-shadow-2xl rounded-3xl animate-pulse"
                             src={BannerImage}

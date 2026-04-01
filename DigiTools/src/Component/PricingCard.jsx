@@ -55,7 +55,7 @@ const PricingCard = () => {
 
             {/* Button */}
             <button className="btn btn-block bg-white hover:bg-gray-300 text-violet-700 font-semibold text-lg py-7 rounded-2xl shadow-md transition-all">
-              Start Pro Trial
+              Get Started Free
             </button>
 
           </div>
@@ -68,7 +68,7 @@ const PricingCard = () => {
 
       {/* Card 2 */}
 
-      <div className="relative w-full max-w-md">
+      <div className="relative w-full max-w-md transition duration-300 transform hover:-translate-y-2 hover:scale-105 shadow-md hover:shadow-xl">
         
         {/* Most Popular Badge */}
         <div className="absolute -top-3 left-1/2 -translate-x-1/2 z-10">
@@ -198,7 +198,7 @@ const PricingCard = () => {
 
             {/* Button */}
             <button className="btn btn-block bg-white hover:bg-gray-300 text-violet-700 font-semibold text-lg py-7 rounded-2xl shadow-md transition-all">
-              Start Pro Trial
+              Contact Sales
             </button>
 
           </div>

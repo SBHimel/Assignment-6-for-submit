@@ -5,6 +5,7 @@ import NavBar from './Component/NavBar'
 import StatsSection from './Component/StatesSection'
 import GetStartedSteps from './Component/GetStartedSteps'
 import PricingCard from './Component/PricingCard'
+import Footer from './Component/Footer'
 
 function App() {
 
@@ -19,6 +20,8 @@ function App() {
       <GetStartedSteps></GetStartedSteps>
 
       <PricingCard></PricingCard>
+
+      <Footer></Footer>
     </>
   )
 }

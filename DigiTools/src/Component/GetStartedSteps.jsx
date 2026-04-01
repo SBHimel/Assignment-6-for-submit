@@ -6,7 +6,7 @@ const GetStartedSteps = () => {
       <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6  p-8 max-w-7xl mx-auto items-center">
         {/* Main Card */}
         <div className="card  max-w-md bg-base-100 shadow-xl">
-          <div className="card-body items-center text-center">
+          <div className="transition duration-300 transform hover:-translate-y-2 hover:scale-105 shadow-md hover:shadow-xl card-body items-center text-center">
 
 
             <div className="absolute top-6 right-6">
@@ -42,8 +42,8 @@ const GetStartedSteps = () => {
         {/* 2nd==== */}
 
 
-        <div className="card w-full max-w-md bg-base-100 shadow-xl">
-          <div className="card-body items-center text-center">
+        <div className=" card w-full max-w-md bg-base-100 shadow-xl">
+          <div className="transition duration-300 transform hover:-translate-y-2 hover:scale-105 shadow-md hover:shadow-xl card-body items-center text-center">
 
            
             <div className="absolute top-6 right-6">
@@ -75,7 +75,7 @@ const GetStartedSteps = () => {
 
         {/* 3rd==== */}
         <div className="card w-full max-w-md bg-base-100 shadow-xl">
-          <div className="card-body items-center text-center">
+          <div className="transition duration-300 transform hover:-translate-y-2 hover:scale-105 shadow-md hover:shadow-xl card-body items-center text-center ">
 
             
             <div className="absolute top-6 right-6">

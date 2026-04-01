@@ -33,11 +33,9 @@ const NavBar = () => {
         </ul>
 
         {/* Right Buttons */}
+        
         <div className="hidden lg:flex items-center gap-5">
-          <button className="font-bold flex items-center gap-2 text-gray-700 hover:text-indigo-600 transition-colors">
-            <LuShoppingCart size={20} />
-            Login
-          </button>
+          
           <a
             className="inline-block px-6 py-3 font-semibold text-white rounded-full
                        bg-gradient-to-r from-purple-600 to-purple-400
@@ -49,7 +47,17 @@ const NavBar = () => {
         </div>
 
         {/* Mobile Hamburger */}
-        <div className="lg:hidden flex items-center">
+        <div className='flex gap-4'>
+          <div className='flex md:justify-end items-end'>
+            <button className="font-bold flex items-center gap-2 text-gray-700 hover:text-indigo-600 transition-colors">
+            <LuShoppingCart size={25} />
+            Login
+          </button>
+          </div>
+
+
+
+          <div className="lg:hidden flex items-center">
           <button
             onClick={() => setIsOpen(!isOpen)}
             className="text-gray-700 focus:outline-none"
@@ -58,6 +66,7 @@ const NavBar = () => {
           </button>
         </div>
       </div>
+        </div>
 
       {/* Mobile Menu */}
       {isOpen && (
