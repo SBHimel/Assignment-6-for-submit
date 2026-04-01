@@ -24,8 +24,8 @@ const ChildProduct = ({ card, carts, setCarts }) => {
     }
 
     return (
-        <div>
-            <div>
+        <div className=''>
+            <div className=''>
                 <div className="max-w-[340px] mx-auto bg-white rounded-3xl shadow-2xl overflow-hidden border border-gray-100 relative">
 
                     {/* Best Seller Badge - Exact Top Right */}
@@ -75,7 +75,7 @@ const ChildProduct = ({ card, carts, setCarts }) => {
                                 <span className="text-gray-700 text-[15px]">{card.featuresTwo}</span>
                             </div>
 
-                            
+
                             <div className="flex items-start gap-3">
                                 <div className="mt-0.5 w-5 h-5 bg-green-100 text-green-600 rounded-full flex items-center justify-center text-base font-bold">✓</div>
                                 <span className="text-gray-700 text-[15px]">{card.featuresThree}</span>
