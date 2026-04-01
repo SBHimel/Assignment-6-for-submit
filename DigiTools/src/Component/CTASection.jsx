@@ -13,6 +13,8 @@ const CTASection = () => {
         </h1>
 
         {/* Subtext */}
+
+        
         <p className="text-sm md:text-base text-white/80 mb-8">
           Join thousands of professionals who are already using DigiStock to work smarter.
           <br />
