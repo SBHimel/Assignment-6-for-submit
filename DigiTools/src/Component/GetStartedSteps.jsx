@@ -2,7 +2,7 @@ import React from 'react';
 
 const GetStartedSteps = () => {
   return (
-    <div className='bg-base-200'>
+    <div className='bg-base-200 mt-18'>
       <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6  p-8 max-w-7xl mx-auto items-center">
         {/* Main Card */}
         <div className="card  max-w-md bg-base-100 shadow-xl">

@@ -2,7 +2,7 @@ import React from 'react';
 
 const PricingCard = () => {
   return (
-    <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6  p-8 max-w-7xl mx-auto items-center items-stretch">
+    <div className=" my-18 grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6  p-8 max-w-7xl mx-auto items-center items-stretch">
 
       {/* Card 1 */}
 
