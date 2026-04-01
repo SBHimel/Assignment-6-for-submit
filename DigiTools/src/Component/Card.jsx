@@ -12,7 +12,7 @@ const Card = ({ carts, setCarts }) => {
 
         toast.success("Payment successful21")
     };
-    
+
 
     const handleDelete = (item) =>{
         // console.log(item)
@@ -26,12 +26,12 @@ const Card = ({ carts, setCarts }) => {
 
 
     return (
-        <div className=' p-10 border rounded-2xl ml-2 max-w-7xl mx-auto'>
+        <div className=' p-10 border rounded-2xl max-w-7xl mx-auto'>
             <h1 className='text-2xl font-bold'>Your Cart</h1>
 
             {
                 carts.length === 0 ?
-                    <div className="mt-6 bg-blue-100 rounded-2xl py-16 flex flex-col items-center justify-center text-center m-6">
+                    <div className="mt-6 bg-blue-100 rounded-2xl py-16 flex flex-col items-center justify-center text-center m-6 ">
 
                         {/* Icon */}
                         <FiShoppingCart className="text-5xl text-gray-500 mb-4" />
