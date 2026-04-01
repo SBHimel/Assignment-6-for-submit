@@ -12,6 +12,7 @@ const Card = ({ carts, setCarts }) => {
 
         toast.success("Payment successful21")
     };
+    
 
     const handleDelete = (item) =>{
         // console.log(item)
@@ -21,6 +22,7 @@ const Card = ({ carts, setCarts }) => {
 
         toast.success("Item deleted")
     }
+
 
 
     return (
