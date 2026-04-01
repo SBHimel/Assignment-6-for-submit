@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { LuShoppingCart } from 'react-icons/lu';
 import { HiOutlineMenu, HiX } from 'react-icons/hi';
 
-const NavBar = () => {
+const NavBar = ({ carts }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -33,9 +33,9 @@ const NavBar = () => {
         </ul>
 
         {/* Right Buttons */}
-        
+
         <div className="hidden lg:flex items-center gap-5">
-          
+
           <a
             className="inline-block px-6 py-3 font-semibold text-white rounded-full
                        bg-gradient-to-r from-purple-600 to-purple-400
@@ -50,23 +50,34 @@ const NavBar = () => {
         <div className='flex gap-4'>
           <div className='flex md:justify-end items-end'>
             <button className="font-bold flex items-center gap-2 text-gray-700 hover:text-indigo-600 transition-colors">
-            <LuShoppingCart size={25} />
-            Login
-          </button>
+
+              {/* Icon with badge */}
+              <div className="relative">
+                <LuShoppingCart size={25} />
+
+                {carts.length > 0 && (
+                  <span className="absolute -top-2 -right-2 inline-flex items-center justify-center px-1.5 py-0.5 text-xs font-bold leading-none text-white bg-red-600 rounded-full">
+                    {carts.length}
+                  </span>
+                )}
+              </div>
+
+              Login
+            </button>
           </div>
 
 
 
           <div className="lg:hidden flex items-center">
-          <button
-            onClick={() => setIsOpen(!isOpen)}
-            className="text-gray-700 focus:outline-none"
-          >
-            {isOpen ? <HiX size={28} /> : <HiOutlineMenu size={28} />}
-          </button>
+            <button
+              onClick={() => setIsOpen(!isOpen)}
+              className="text-gray-700 focus:outline-none"
+            >
+              {isOpen ? <HiX size={28} /> : <HiOutlineMenu size={28} />}
+            </button>
+          </div>
         </div>
       </div>
-        </div>
 
       {/* Mobile Menu */}
       {isOpen && (

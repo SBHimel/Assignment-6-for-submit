@@ -28,7 +28,7 @@ function App() {
 
   return (
     <>
-      <NavBar></NavBar>
+      <NavBar carts={carts}></NavBar>
 
       <Banner></Banner>
 
@@ -42,7 +42,9 @@ function App() {
         <input 
         type="radio" 
         name="my_tabs_1" 
-        className="tab rounded-full w-40" 
+        className={`tab rounded-full w-40 ${
+      activeTab === "products" ? "bg-purple-600 text-white" : "bg-gray-200"
+    }`} 
         aria-label="Products"
         defaultChecked
         onClick={()=> setActiveTab("products")}
@@ -50,8 +52,10 @@ function App() {
 
         <input type="radio"
          name="my_tabs_1"
-          className="tab tab rounded-full w-40" 
-          aria-label="Cart"
+          className={`tab rounded-full w-40 ${
+      activeTab === "cart" ? "bg-purple-600 text-white" : "bg-gray-200"     }`}
+
+          aria-label={`Card (${carts.length})`}
           onClick={()=> setActiveTab("cart")} 
            />
 
@@ -59,7 +63,7 @@ function App() {
 
       {activeTab === "products" ? <Products cardsPromise={cardsPromise}   carts={carts}  setCarts={setCarts}></Products>  : null}
 
-      {activeTab=== "cart" ? <Card  carts={carts}></Card>  : null}
+      {activeTab=== "cart" ? <Card  carts={carts}  setCarts={setCarts}></Card>  : null}
 
       <GetStartedSteps></GetStartedSteps>
 

@@ -3,6 +3,7 @@ import React from 'react';
 const Premium = () => {
     return (
         <div>
+            
             <div className=" py-8">
                 <div className="max-w-7xl mx-auto px-6 text-center">
 

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { toast } from 'react-toastify';
 
 
 
@@ -10,7 +11,16 @@ const ChildProduct = ({ card, carts, setCarts }) => {
     const handleChange = () => {
         setIsBuyNow(false)
 
+        const isFound = carts.find(item => item.id === card.id)
+        // console.log(isFound)
+        if (isFound) {
+            toast.error("Item already in cart!")
+            return
+        }
+
         setCarts([...carts, card])
+
+        toast.success("Item added to cart!")
     }
 
     return (
@@ -71,12 +81,14 @@ const ChildProduct = ({ card, carts, setCarts }) => {
                         </div>
 
                         {/* Buy Now Button */}
-                        <button onClick={handleChange} className="w-full bg-[#7C3AED] hover:bg-[#6D28D9] transition-all text-white font-semibold text-lg py-3 rounded-4xl shadow-lg active:scale-[0.97]"
-                            style={{ background: 'linear-gradient(to right, #4F39F6, #9514FA)' }}>
-
-
-                            {isBuyNow ? "Buy Now"
-                                : "Added to Cart"}
+                        <button
+                            onClick={handleChange}
+                            className={`w-full text-white font-semibold text-lg py-3 rounded-4xl shadow-lg active:scale-[0.97] transition-all ${isBuyNow
+                                    ? "bg-purple-600 hover:bg-purple-700"   // Buy Now state
+                                    : "bg-green-500 hover:bg-green-600"     // Added to Cart state
+                                }`}
+                        >
+                            {isBuyNow ? "Buy Now" : "Added to Cart"}
                         </button>
                     </div>
                 </div>
