@@ -44,6 +44,7 @@ const NavBar = ({ carts }) => {
           >
             Get in Touch
           </a>
+          
         </div>
 
         {/* Mobile Hamburger */}
