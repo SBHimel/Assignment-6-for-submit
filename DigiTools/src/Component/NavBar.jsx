@@ -44,8 +44,9 @@ const NavBar = ({ carts }) => {
           >
             Get in Touch
           </a>
-          
+
         </div>
+        
 
         {/* Mobile Hamburger */}
         <div className='flex gap-4'>
