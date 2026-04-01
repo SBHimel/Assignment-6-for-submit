@@ -10,6 +10,7 @@ import Products from './Component/Products'
 import Card from './Component/Card'
 import { useState } from 'react'
 import Premium from './Component/Premium'
+import CTASection from './Component/CTASection'
 
 const fetchCard = async () => {
   const res = await fetch("/data.json");
@@ -68,6 +69,8 @@ function App() {
       <GetStartedSteps></GetStartedSteps>
 
       <PricingCard></PricingCard>
+
+      <CTASection></CTASection>
 
       <Footer></Footer>
     </>
